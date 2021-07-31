@@ -1,18 +1,29 @@
 <template>
   <ion-page>
-    
     <ion-content :fullscreen="true">
-    
-      <div id="container">
-        <strong>HUMAN</strong>
-      </div>
+      <ion-grid>
+        <ion-row class="justify-content-center">
+          <ion-col class="height-50"></ion-col>
+          <ion-col size="12" class="ion-margin-top-human">
+            <h3 class="ion-color-primary ion-text-center">HUMAN</h3>
+          </ion-col>
+          <ion-col size="12" class="ion-text-center">
+            <ion-button class="ion-margin">
+              Sign Up
+            </ion-button>
+            <ion-button class="ion-margin">
+              Sign In
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonContent, IonPage } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'; 
 
 export default defineComponent({
   name: 'Home',
@@ -24,6 +35,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.height-50{
+  height: 50vh;
+}
 #container {
   text-align: center;
   
